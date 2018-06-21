@@ -6,13 +6,13 @@ Hyperledger Explorer is a simple, powerful, easy-to-use, highly maintainable, op
 ## Directory Structure
 ```
 ├── app            Application backend root
-	├── db			   Postgres script and help class
+	├── db		   MariaDB script and help class
 	├── listener       Websocket listener
 	├── metrics        Metrics
 	├── mock_server	   Mock server used for development
 	├── service        The service
-	├── socket		   Push real time data to front end
-	├── test		   Endpoint tests
+	├── socket         Push real time data to front end
+	├── test           Endpoint tests
 	├── timer          Timer to post information periodically
 	└── utils          Various utility scripts
 ├── client          Web Ui
@@ -63,7 +63,7 @@ On another terminal.
 	- Final path for key "tls_cacerts" will be:  "/home/user1/workspace/fabric-samples/first-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt".
 
 - Modify config.json to update one of the channel
-	- pg host, username, password details.
+	- mysql host, username, password details.
 ```json
  "channel": "mychannel",
  "mysql": {
