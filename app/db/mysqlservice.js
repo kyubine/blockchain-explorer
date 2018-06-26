@@ -17,8 +17,8 @@ function handleDisconnect() {
         host: mysqlconfig.host,
         port: mysqlconfig.port,
         database: mysqlconfig.database,
-        user: "jky",
-        password: "111111"
+        user: mysqlconfig.username ,
+        password: mysqlconfig.password
 
     });
 
